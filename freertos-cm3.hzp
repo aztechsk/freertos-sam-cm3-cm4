@@ -1,0 +1,19 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="freertos-cm3" target="8" version="2">
+  <project Name="freertos-cm3">
+    <configuration
+      Name="Common"
+      c_only_additional_options="-Wall;-Wextra;-Wstrict-prototypes;-Wmissing-prototypes;-Wmissing-declarations;-Wno-strict-aliasing;-Wundef"
+      c_user_include_directories="$(ProjectDir)/../inc;$(ProjectDir)/src/inc"
+      project_directory=""
+      project_type="Library" />
+    <folder Name="src">
+      <file Name="tasks.c" file_name="src/tasks.c" />
+      <file Name="list.c" file_name="src/list.c" />
+      <file Name="queue.c" file_name="src/queue.c" />
+      <file Name="port.c" file_name="src/port.c" />
+      <file Name="heap_3.c" file_name="src/heap_3.c" />
+    </folder>
+    <configuration Name="Release" gcc_optimization_level="Level 1" />
+  </project>
+</solution>
