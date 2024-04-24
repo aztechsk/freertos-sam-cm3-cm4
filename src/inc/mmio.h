@@ -39,6 +39,10 @@
  #if !defined(__SAM4S2A__)
   #define __SAM4S2A__
  #endif
+#elif defined(MCU_AT91SAM4S4A)
+ #if !defined(__SAM4S4A__)
+  #define __SAM4S4A__
+ #endif
 #else
  #error "MCU type symbolic constant not defined"
 #endif
