@@ -1,7 +1,7 @@
 /*
  * mmio.h
  *
- * Copyright (c) 2024 Jan Rusnak <jan@rusnak.sk>
+ * Copyright (c) 2025 Jan Rusnak <jan@rusnak.sk>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -42,6 +42,10 @@
 #elif defined(MCU_AT91SAM4S4A)
  #if !defined(__SAM4S4A__)
   #define __SAM4S4A__
+ #endif
+#elif defined(MCU_AT91SAM4S4B)
+ #if !defined(__SAM4S4B__)
+  #define __SAM4S4B__
  #endif
 #else
  #error "MCU type symbolic constant not defined"
